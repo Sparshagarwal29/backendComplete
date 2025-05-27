@@ -80,9 +80,9 @@ userSchema.method.generateRefreshToken =function(){
     return JsonWebTokenError.sign(
         {
             _id: this._id,
-            username: this.username
         },
-        process.env.REFFRESH_TOKEN_SECRET,{
+        process.env.REFFRESH_TOKEN_SECRET,
+        {
             expiresIn:process.env.REFFRESH_TOKEN_EXPIRY
         } 
     )
