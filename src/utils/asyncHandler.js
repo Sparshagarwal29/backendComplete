@@ -11,9 +11,9 @@
 
 //     }
 // } 
-
+// whats the need of this ? : with this i dont need to wrap try and catch block again and again 
 const asyncHandler = (requestHandler) =>{ //requestHandler is the just the name of function we could have wrote fn 
-    (req,res,next) =>{
+    return (req,res,next) =>{
         Promise.resolve(requestHandler(req,res,next)).catch((err) => next(err))
     }
 }

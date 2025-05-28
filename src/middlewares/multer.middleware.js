@@ -7,6 +7,6 @@ destination: function (req, file, cb) {
 filename: function (req, file, cb) {
   cb(null, file.originalname)
 }
-})//cb==call back
+})//cb==call back fnction 
 
 export const upload = multer({ storage: storage }) 
