@@ -1,5 +1,5 @@
 import { v2 } from "cloudinary";
-import fs from "fs;"
+import fs from "fs";
 
 v2.config({ 
     cloud_name: 'process.env.CLOUDNARY_CLOUD_NAME', 
